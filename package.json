@@ -1,0 +1,22 @@
+{
+  "name": "vrchat-api",
+  "version": "0.1.0",
+  "description": "VRChat API Client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnao305/vrchat-api.git"
+  },
+  "keywords": [
+    "vrchat"
+  ],
+  "author": "mnao305 <mail@mnao305.com> (https://mnao305.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnao305/vrchat-api/issues"
+  },
+  "homepage": "https://github.com/mnao305/vrchat-api#readme"
+}
