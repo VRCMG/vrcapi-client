@@ -2,8 +2,10 @@
   "name": "vrchat-api",
   "version": "0.1.0",
   "description": "VRChat API Client",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mnao305/vrchat-api/issues"
   },
-  "homepage": "https://github.com/mnao305/vrchat-api#readme"
+  "homepage": "https://github.com/mnao305/vrchat-api#readme",
+  "devDependencies": {
+    "typescript": "^4.1.4"
+  }
 }
