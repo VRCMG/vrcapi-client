@@ -1,8 +1,8 @@
-import { UnityPackages } from './UnityPackage'
+import { UnityPackagesObject } from './UnityPackage'
 
 type ReleaseStatus = 'public' | 'private' | 'hidden'
 
-export interface Avatar {
+export interface AvatarObject {
   assetUrl: string
   assetUrlObject: {}
   authorId: string
@@ -18,7 +18,7 @@ export interface Avatar {
   thumbnailImageUrl: string
   unityPackageUrl: string
   unityPackageUrlObject: {}
-  unityPackages: UnityPackages[]
+  unityPackages: UnityPackagesObject[]
   updated_at: string
   version: number // ? API docではstringとなっていたが。
 }

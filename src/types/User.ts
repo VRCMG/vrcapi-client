@@ -14,7 +14,7 @@ interface PastDisplayName {
   updated_at: string
 }
 
-export interface CurrentUser {
+export interface CurrentUserObject {
   acceptedTOSVersion: number
   accountDeletionDate: null | string
   activeFriends: string[]
@@ -62,7 +62,7 @@ export interface CurrentUser {
   username: string
 }
 
-export interface User {
+export interface UserObject {
   allowAvatarCopying: boolean
   bio: string
   bioLinks: string[]
@@ -88,7 +88,7 @@ export interface User {
   worldId: string
 }
 
-export interface LimitedUser {
+export interface LimitedUserObject {
   bio: string
   currentAvatarImageUrl: string
   currentAvatarThumbnailImageUrl: string

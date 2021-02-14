@@ -1,4 +1,4 @@
-import { WorldUnityPackages } from './UnityPackage'
+import { WorldUnityPackagesObject } from './UnityPackage'
 
 type ReleaseStatus = 'public' | 'private' | 'hidden'
 type Instance = [string, number]
@@ -40,7 +40,7 @@ export interface WorldObject {
   thumbnailImageUrl: string
   unityPackageUrl: string
   unityPackageUrlObject: {}
-  unityPackages: WorldUnityPackages[]
+  unityPackages: WorldUnityPackagesObject[]
   updated_at: string
   version: number
   visits: number
@@ -64,7 +64,7 @@ export interface LimitedWorldObject {
   releaseStatus: ReleaseStatus
   tags: string[]
   thumbnailImageUrl: string
-  unityPackages: WorldUnityPackages[]
+  unityPackages: WorldUnityPackagesObject[]
   updated_at: string
   visits: number
 }

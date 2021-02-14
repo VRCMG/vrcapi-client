@@ -1,4 +1,4 @@
-export interface UnityPackages {
+export interface UnityPackagesObject {
   id: string
   assetUrl: string
   assetUrlObject: {}
@@ -9,7 +9,7 @@ export interface UnityPackages {
   created_at: string
 }
 
-export interface WorldUnityPackages extends UnityPackages {
+export interface WorldUnityPackagesObject extends UnityPackagesObject {
   pluginUrl: string
   pluginUrlObject: {}
 }
