@@ -1,7 +1,7 @@
 export interface UnityPackagesObject {
   id: string
   assetUrl: string
-  assetUrlObject: {}
+  assetUrlObject: unknown
   assetVersion: number
   platform: string
   unitySortNumber: number
@@ -11,5 +11,5 @@ export interface UnityPackagesObject {
 
 export interface WorldUnityPackagesObject extends UnityPackagesObject {
   pluginUrl: string
-  pluginUrlObject: {}
+  pluginUrlObject: unknown
 }

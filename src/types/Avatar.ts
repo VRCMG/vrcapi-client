@@ -4,7 +4,7 @@ type ReleaseStatus = 'public' | 'private' | 'hidden'
 
 export interface AvatarObject {
   assetUrl: string
-  assetUrlObject: {}
+  assetUrlObject: unknown
   authorId: string
   authorName: string
   created_at: string
@@ -17,7 +17,7 @@ export interface AvatarObject {
   tags: string[]
   thumbnailImageUrl: string
   unityPackageUrl: string
-  unityPackageUrlObject: {}
+  unityPackageUrlObject: unknown
   unityPackages: UnityPackagesObject[]
   updated_at: string
   version: number // ? API docではstringとなっていたが。

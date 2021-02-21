@@ -11,7 +11,7 @@ interface Platforms {
 
 export interface WorldObject {
   assetUrl: string
-  assetUrlObject: {}
+  assetUrlObject: unknown
   authorId: string
   authorName: string
   capacity: number // ? API docではstringになってる
@@ -29,9 +29,9 @@ export interface WorldObject {
   occupants: number
   organization: string
   pluginUrl: string
-  pluginUrlObject: {}
+  pluginUrlObject: unknown
   popularity: number
-  previewYoutubeId: null | any // ? 不明。API docに存在していない
+  previewYoutubeId: null | unknown // ? 不明。API docに存在していない
   privateOccupants: number // ? API docに存在していない
   publicOccupants: number
   publicationDate: string
@@ -39,7 +39,7 @@ export interface WorldObject {
   tags: string[]
   thumbnailImageUrl: string
   unityPackageUrl: string
-  unityPackageUrlObject: {}
+  unityPackageUrlObject: unknown
   unityPackages: WorldUnityPackagesObject[]
   updated_at: string
   version: number

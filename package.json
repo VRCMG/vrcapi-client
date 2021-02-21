@@ -10,7 +10,7 @@
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "build": "tsc",
-    "lint": "eslint --ext .ts,.js --ignore-path .gitignore .",
+    "lint": "eslint --ext .ts,.js --ignore-path .gitignore src/",
     "test": "jest",
     "commit": "cz"
   },

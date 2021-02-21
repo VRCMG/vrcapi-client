@@ -53,7 +53,7 @@ export interface CurrentUserObject {
   state: State
   status: Status
   statusDescription: string
-  steamDetails: {}
+  steamDetails: unknown
   steamId: string
   tags: Tags[]
   twoFactorAuthEnabled: boolean
@@ -97,7 +97,7 @@ export interface LimitedUserObject {
   fallbackAvatar: string
   friendKey: string
   id: string
-  isFriend: Boolean
+  isFriend: boolean
   last_login: string
   last_platform: string
   location: string
