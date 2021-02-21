@@ -12,4 +12,8 @@ jobs:
         node-version: '14'
     - uses: actions/checkout@v2
     - run: npm ci
+    - run: npm run build
     - run: npm run test
+    env:
+      VRC_USERNAME: ${{ secrets.VRC_USERNAME }}
+      VRC_PASSWORD: ${{ secrets.VRC_PASSWORD }}
