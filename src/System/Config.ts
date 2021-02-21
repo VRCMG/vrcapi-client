@@ -6,6 +6,6 @@ import { get } from '../util/API'
  * https://vrchatapi.github.io/#/SystemAPI/Config
  */
 export const config = async (): Promise<ConfigObject> => {
-  const tmp = await get<ConfigObject>('/config')
-  return tmp
+  const config = await get<ConfigObject>('/config')
+  return config
 }
