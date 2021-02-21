@@ -1,8 +1,11 @@
 import axios from 'axios'
 
-const BASE_URL = 'https://api.vrchat.cloud/api/1'
+axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+axios.defaults.baseURL = 'https://api.vrchat.cloud/api/1'
+axios.defaults.withCredentials = true
+axios.defaults.headers.common['Content-Type'] = 'application/json'
 
 export const get = async <T>(path: string): Promise<T> => {
-  const parsed = await axios.get<T>(BASE_URL + path)
+  const parsed = await axios.get<T>(path)
   return parsed.data
 }
