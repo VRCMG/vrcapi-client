@@ -5,12 +5,20 @@ axios.defaults.baseURL = 'https://api.vrchat.cloud/api/1'
 axios.defaults.withCredentials = true
 axios.defaults.headers.common['Content-Type'] = 'application/json'
 
+let cookie = ''
+
 export const get = async <T>(path: string): Promise<T> => {
-  const parsed = await axios.get<T>(path)
-  return parsed.data
+  const res = await axios.get<T>(path, {
+    headers: {
+      Cookie: cookie
+    }
+  })
+
+  return res.data
 }
 
 export const getAuth = async <T>(path: string, apiKey: string, username: string, password: string): Promise<T> => {
   const res = await axios.get<T>(path, { params: { apiKey }, auth: { username, password } })
+  cookie = res.headers['set-cookie']
   return res.data
 }

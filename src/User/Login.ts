@@ -1,4 +1,4 @@
-import { config } from 'src/System/Config'
+import { config } from '../System/Config'
 import { CurrentUserObject } from 'src/types/User'
 import { getAuth } from '../util/API'
 
