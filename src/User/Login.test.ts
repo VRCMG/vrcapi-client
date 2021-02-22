@@ -5,18 +5,18 @@ describe('User API - Login Authorization', () => {
     if (process.env.VRC_USERNAME == null || process.env.VRC_PASSWORD == null) {
       throw new Error('Test failed. Credentials do not exist in environment variables')
     }
-    try {
-      const response = await login(process.env.VRC_USERNAME, process.env.VRC_PASSWORD)
-      expect(response.username).toBe('mnao305')
-    } catch (error) {
-      console.error(error.response.data)
-      throw new Error(error.response.data)
-    }
+    const response = await login(process.env.VRC_USERNAME, process.env.VRC_PASSWORD).catch(error => {
+      throw new Error(error.response.data.error.message)
+    })
+    expect(response.username).toBe(process.env.VRC_USERNAME)
   })
   test('ng - login failure with incorrect password', async () => {
+    if (process.env.VRC_USERNAME == null) {
+      throw new Error('Test failed. Credentials do not exist in environment variables')
+    }
     let status = 0
     try {
-      await login('mnao305', 'hoge')
+      await login(process.env.VRC_USERNAME, 'hoge')
     } catch (error) {
       status = error.response.status
     }
