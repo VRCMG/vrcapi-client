@@ -9,3 +9,8 @@ export const get = async <T>(path: string): Promise<T> => {
   const parsed = await axios.get<T>(path)
   return parsed.data
 }
+
+export const getAuth = async <T>(path: string, apiKey: string, username: string, password: string): Promise<T> => {
+  const res = await axios.get<T>(path, { params: { apiKey }, auth: { username, password } })
+  return res.data
+}
