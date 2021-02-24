@@ -22,3 +22,12 @@ export const getAuth = async <T>(path: string, apiKey: string, username: string,
   cookie = res.headers['set-cookie']
   return res.data
 }
+
+export const post = async <T>(path: string, data: Record<string, unknown>): Promise<T> => {
+  const res = await axios.post<T>(path, data, {
+    headers: {
+      Cookie: cookie
+    }
+  })
+  return res.data
+}
