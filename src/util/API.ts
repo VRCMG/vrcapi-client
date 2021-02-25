@@ -7,11 +7,12 @@ axios.defaults.headers.common['Content-Type'] = 'application/json'
 
 let cookie = ''
 
-export const get = async <T>(path: string): Promise<T> => {
+export const get = async <T>(path: string, params?: Record<string, unknown>): Promise<T> => {
   const res = await axios.get<T>(path, {
     headers: {
       Cookie: cookie
-    }
+    },
+    params
   })
 
   return res.data
