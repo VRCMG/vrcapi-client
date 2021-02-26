@@ -20,7 +20,7 @@ export interface CurrentUserObject {
   activeFriends: string[]
   allowAvatarCopying: boolean
   bio: string
-  bioLinks: string
+  bioLinks: string[]
   currentAvatar: string
   currentAvatarAssetUrl: string
   currentAvatarImageUrl: string
@@ -89,7 +89,7 @@ export interface UserObject {
 }
 
 export interface LimitedUserObject {
-  bio: string
+  bio?: string // ? 存在しない場合がある？
   currentAvatarImageUrl: string
   currentAvatarThumbnailImageUrl: string
   developerType: DeveloperType
