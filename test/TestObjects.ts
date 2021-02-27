@@ -1,4 +1,5 @@
 import { CurrentUserObject, LimitedUserObject } from 'src/types/User'
+import { WorldObject } from 'src/types/World'
 
 export const CurrentUserTestData: CurrentUserObject = {
   acceptedTOSVersion: 0,
@@ -66,4 +67,41 @@ export const LimitedUserTestData: LimitedUserObject = {
   tags: [],
   userIcon: '',
   username: ''
+}
+
+export const WorldObjectTestData: WorldObject = {
+  assetUrl: '',
+  assetUrlObject: 'unknown',
+  authorId: '',
+  authorName: '',
+  capacity: 0,
+  created_at: '',
+  description: '',
+  favorites: 0,
+  featured: true,
+  heat: 0,
+  id: '',
+  imageUrl: '',
+  instances: [],
+  labsPublicationDate: '',
+  name: '',
+  namespace: '',
+  occupants: 0,
+  organization: '',
+  pluginUrl: 'undefined',
+  pluginUrlObject: 'unknown',
+  popularity: 0,
+  previewYoutubeId: 'unknown',
+  privateOccupants: 0,
+  publicOccupants: 0,
+  publicationDate: '',
+  releaseStatus: 'public',
+  tags: [],
+  thumbnailImageUrl: '',
+  unityPackageUrl: 'undefined',
+  unityPackageUrlObject: 'unknown',
+  unityPackages: [],
+  updated_at: '',
+  version: 0,
+  visits: 0
 }

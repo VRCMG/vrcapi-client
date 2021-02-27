@@ -28,7 +28,7 @@ export interface WorldObject {
   namespace: string
   occupants: number
   organization: string
-  pluginUrl: string
+  pluginUrl?: string
   pluginUrlObject: unknown
   popularity: number
   previewYoutubeId: null | unknown // ? 不明。API docに存在していない
@@ -38,7 +38,7 @@ export interface WorldObject {
   releaseStatus: ReleaseStatus
   tags: string[]
   thumbnailImageUrl: string
-  unityPackageUrl: string
+  unityPackageUrl?: string
   unityPackageUrlObject: unknown
   unityPackages: WorldUnityPackagesObject[]
   updated_at: string
