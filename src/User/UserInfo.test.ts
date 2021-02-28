@@ -1,13 +1,13 @@
 import { CurrentUserObject } from 'src/types/User'
 import { beforeLogin } from 'test/BeforeLogin'
 import { CurrentUserTestData } from 'test/TestObjects'
-import { getUserInfo } from './UserInfo'
+import { getCurrentUser } from './UserInfo'
 
 describe('User API - Current User Details', () => {
   test('ok - get current user details', async () => {
     await beforeLogin()
 
-    const response = await getUserInfo().catch(error => {
+    const response = await getCurrentUser().catch(error => {
       console.error(error)
       throw new Error(error.response.data.error.message)
     })

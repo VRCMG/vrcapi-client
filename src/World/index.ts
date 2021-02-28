@@ -1,3 +1,3 @@
-import { getWorld } from './World'
+import { getById } from './World'
 
-export default { getWorld }
+export default { getById }

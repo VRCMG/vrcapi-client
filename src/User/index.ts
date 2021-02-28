@@ -1,6 +1,6 @@
 import { login } from './Login'
-import { getUserInfo } from './UserInfo'
-import { verify } from './Verify'
+import { getCurrentUser } from './UserInfo'
+import { verify2FactorAuth } from './Verify'
 import { getFriends, getFavFriends } from './Friends'
 
-export default { login, getUserInfo, verify, getFriends, getFavFriends }
+export default { login, getCurrentUser, verify2FactorAuth, getFriends, getFavFriends }

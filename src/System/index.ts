@@ -1,4 +1,4 @@
-import { config } from './Config'
-import { visits } from './Visits'
+import { getConfig } from './Config'
+import { getVisits } from './Visits'
 
-export default { config, visits }
+export default { getConfig, getVisits }

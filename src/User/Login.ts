@@ -1,4 +1,4 @@
-import { config } from '../System/Config'
+import { getConfig } from '../System/Config'
 import { CurrentUserObject } from 'src/types/User'
 import { getAuth } from '../util/API'
 
@@ -7,7 +7,7 @@ import { getAuth } from '../util/API'
  * https://vrchatapi.github.io/#/Authorization
  */
 export const login = async (username: string, password: string): Promise<CurrentUserObject> => {
-  const c = await config()
+  const c = await getConfig()
   const user = await getAuth<CurrentUserObject>('/auth/user', c.apiKey, username, password)
   return user
 }

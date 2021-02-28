@@ -18,7 +18,7 @@ describe('test', () => {
     expect(Array.isArray(response)).toBe(true)
   })
   it('get world', async () => {
-    const response = await vrc.world.getWorld('wrld_4432ea9b-729c-46e3-8eaf-846aa0a37fdd')
+    const response = await vrc.world.getById('wrld_4432ea9b-729c-46e3-8eaf-846aa0a37fdd')
     expect(typeof response.name).toBe('string')
   })
 })
