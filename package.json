@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
+  "files": ["dist", "LICENSE", "package.json", "README.md"],
   "scripts": {
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
