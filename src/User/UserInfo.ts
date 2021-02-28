@@ -1,5 +1,5 @@
 import { CurrentUserObject } from 'src/types/User'
-import { get } from 'src/util/API'
+import { get } from '../util/API'
 
 /**
  * get most of the details of the user

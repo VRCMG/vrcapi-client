@@ -10,6 +10,7 @@ jobs:
         node-version: '14'
     - uses: actions/checkout@v2
     - run: npm ci
+    - run: npm run build
     - uses: mattallty/jest-github-action@v1
     env:
       VRC_USERNAME: ${{ secrets.VRC_USERNAME }}

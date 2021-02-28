@@ -1,5 +1,5 @@
 import { WorldObject } from 'src/types/World'
-import { get } from 'src/util/API'
+import { get } from '../util/API'
 
 /**
  * get information about a world

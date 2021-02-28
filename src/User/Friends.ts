@@ -1,5 +1,5 @@
 import { LimitedUserObject } from 'src/types/User'
-import { get } from 'src/util/API'
+import { get } from '../util/API'
 
 /**
  * get information about your friends
