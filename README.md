@@ -1,4 +1,4 @@
-# vrchat-api
+# vrc-api
 
 This library wraps the VRChat API.
 Functions for each API endpoint, type information for convenient use in TypeScript are provided.
@@ -10,7 +10,7 @@ Created for internal use with [VRCFriendCheck](https://github.com/mnao305/VRCFri
 Install with npm:
 
 ```sh
-npm install vrchat-api
+npm install vrc-api
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install vrchat-api
 See type information for details.
 
 ```javascript
-import * as vrc from 'vrchat-api'
+import * as vrc from 'vrc-api'
 
 // login
 await vrc.user.login('username', 'password')
