@@ -1,5 +1,5 @@
 {
-  "name": "vrc-api",
+  "name": "vrcapi-client",
   "version": "0.1.1",
   "description": "VRChat API Client",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "README.md"
   ],
   "scripts": {
-    "_postinstall": "husky install",
+    "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable",
     "build": "tsc -p tsconfig.build.json",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mnao305/vrc-api.git"
+    "url": "git+https://github.com/mnao305/vrcapi-client.git"
   },
   "keywords": [
     "vrchat"
@@ -31,9 +31,9 @@
   "author": "mnao305 <mail@mnao305.com> (https://mnao305.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mnao305/vrc-api/issues"
+    "url": "https://github.com/mnao305/vrcapi-client/issues"
   },
-  "homepage": "https://github.com/mnao305/vrc-api#readme",
+  "homepage": "https://github.com/mnao305/vrcapi-client#readme",
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
