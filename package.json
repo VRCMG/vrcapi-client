@@ -1,7 +1,7 @@
 {
   "name": "vrcapi-client",
   "version": "0.2.0",
-  "description": "VRChat API Client",
+  "description": "Unofficial VRChat API Client library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,

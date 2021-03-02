@@ -1,6 +1,7 @@
 # vrcapi-client
 
-This library wraps the VRChat API.
+Unofficial VRChat API Client library.
+
 Functions for each API endpoint, type information for convenient use in TypeScript are provided.
 
 Created for internal use with [VRCFriendCheck](https://github.com/mnao305/VRCFriendCheck). So there are multiple endpoints that are not implemented.
