@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://www.github.com/mnao305/vrcapi-client/compare/v0.1.1...v0.2.0) (2021-03-02)
+
+
+### Features
+
+* **system:** add function for verifies token ([#43](https://www.github.com/mnao305/vrcapi-client/issues/43)) ([910fd9e](https://www.github.com/mnao305/vrcapi-client/commit/910fd9eb700b59af7f976b69b415bc2466b59462))
+* **user:** add function for logout ([#44](https://www.github.com/mnao305/vrcapi-client/issues/44)) ([5471337](https://www.github.com/mnao305/vrcapi-client/commit/54713372ad0c718fecba99696dc46298531f1d1f)), closes [#42](https://www.github.com/mnao305/vrcapi-client/issues/42)
+
 ### [0.1.1](https://github.com/mnao305/vrcapi-client/compare/v0.1.0...v0.1.1) (2021-02-28)
 
 ## 0.1.0 (2021-02-28)
