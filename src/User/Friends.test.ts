@@ -2,6 +2,7 @@ import { getFavFriends, getFriends } from './Friends'
 import { beforeLogin } from 'test/BeforeLogin'
 import { LimitedUserTestData } from 'test/TestObjects'
 import { LimitedUserObject } from 'src/types/User'
+import { logout } from './Logout'
 
 describe('User API - get friends', () => {
   test('ok - get offline friends', async () => {
@@ -20,6 +21,8 @@ describe('User API - get friends', () => {
       }
       expect(typeof response[0][key]).toBe(typeof LimitedUserTestData[key])
     }
+
+    await logout()
   })
   test('ok - get favorite friends', async () => {
     await beforeLogin()
@@ -37,5 +40,7 @@ describe('User API - get friends', () => {
       }
       expect(typeof response[0][key]).toBe(typeof LimitedUserTestData[key])
     }
+
+    await logout()
   })
 })

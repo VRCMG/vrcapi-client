@@ -32,3 +32,12 @@ export const post = async <T>(path: string, data: Record<string, unknown>): Prom
   })
   return res.data
 }
+
+export const put = async <T>(path: string, data: Record<string, unknown> = {}): Promise<T> => {
+  const res = await axios.put<T>(path, data, {
+    headers: {
+      Cookie: cookie
+    }
+  })
+  return res.data
+}

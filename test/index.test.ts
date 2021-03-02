@@ -21,4 +21,9 @@ describe('test', () => {
     const response = await vrc.world.getById('wrld_4432ea9b-729c-46e3-8eaf-846aa0a37fdd')
     expect(typeof response.name).toBe('string')
   })
+
+  it('logout', async () => {
+    const res = await vrc.user.logout()
+    expect(res.success.status_code).toBe(200)
+  })
 })

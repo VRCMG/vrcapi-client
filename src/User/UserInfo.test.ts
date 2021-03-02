@@ -1,6 +1,7 @@
 import { CurrentUserObject } from 'src/types/User'
 import { beforeLogin } from 'test/BeforeLogin'
 import { CurrentUserTestData } from 'test/TestObjects'
+import { logout } from './Logout'
 import { getCurrentUser } from './UserInfo'
 
 describe('User API - Current User Details', () => {
@@ -17,5 +18,7 @@ describe('User API - Current User Details', () => {
     for (key in CurrentUserTestData) {
       expect(typeof response[key]).toBe(typeof CurrentUserTestData[key])
     }
+
+    await logout()
   })
 })

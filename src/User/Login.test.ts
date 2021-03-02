@@ -1,6 +1,7 @@
 import { CurrentUserObject } from 'src/types/User'
 import { CurrentUserTestData } from 'test/TestObjects'
 import { login } from './Login'
+import { logout } from './Logout'
 
 describe('User API - Login Authorization', () => {
   test('ok - login', async () => {
@@ -16,6 +17,8 @@ describe('User API - Login Authorization', () => {
     for (key in CurrentUserTestData) {
       expect(typeof response[key]).toBe(typeof CurrentUserTestData[key])
     }
+
+    await logout()
   })
   test('ng - login failure with incorrect password', async () => {
     if (process.env.VRC_USERNAME == null) {
