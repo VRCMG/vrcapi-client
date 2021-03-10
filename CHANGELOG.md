@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://www.github.com/mnao305/vrcapi-client/compare/v0.2.0...v0.3.0) (2021-03-10)
+
+
+### Features
+
+* add websocket api ([#64](https://www.github.com/mnao305/vrcapi-client/issues/64)) ([58f73c0](https://www.github.com/mnao305/vrcapi-client/commit/58f73c0b7f31248f8752cc1cc1692214ff0dbc67))
+
+
+### Bug Fixes
+
+* **user:** fix return type when 2 factor auth was enabled  ([#69](https://www.github.com/mnao305/vrcapi-client/issues/69)) ([3d470e5](https://www.github.com/mnao305/vrcapi-client/commit/3d470e55a69cda4924f418fc8d0e8f2d772834cf))
+
 ## [0.2.0](https://www.github.com/mnao305/vrcapi-client/compare/v0.1.1...v0.2.0) (2021-03-02)
 
 
