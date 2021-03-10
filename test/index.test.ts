@@ -9,6 +9,9 @@ describe('test', () => {
       throw new Error('Test failed. Credentials do not exist in environment variables')
     }
     const response = await vrc.user.login(process.env.VRC_USERNAME, process.env.VRC_PASSWORD)
+    if ('requiresTwoFactorAuth' in response) {
+      throw new Error('Two-factor authentication is enabled')
+    }
 
     expect(typeof response.username).toBe('string')
   })

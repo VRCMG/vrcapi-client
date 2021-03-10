@@ -12,10 +12,17 @@ describe('User API - Login Authorization', () => {
       throw new Error(error.response.data.error.message)
     })
 
-    // type check
-    let key: keyof CurrentUserObject
-    for (key in CurrentUserTestData) {
-      expect(typeof response[key]).toBe(typeof CurrentUserTestData[key])
+    if ('requiresTwoFactorAuth' in response) {
+      // eslint-disable-next-line jest/no-conditional-expect
+      expect(Array.isArray(response.requiresTwoFactorAuth)).toBe(true)
+      return
+    } else {
+      // type check
+      let key: keyof CurrentUserObject
+      for (key in CurrentUserTestData) {
+      // eslint-disable-next-line jest/no-conditional-expect
+        expect(typeof response[key]).toBe(typeof CurrentUserTestData[key])
+      }
     }
 
     await logout()

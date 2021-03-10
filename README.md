@@ -22,7 +22,14 @@ See type information for details.
 import * as vrc from 'vrcapi-client'
 
 // login
-await vrc.user.login('username', 'password')
+const res = await vrc.user.login('username', 'password')
+
+// Check if two-factor authentication is enabled
+if ('requiresTwoFactorAuth' in res) {
+  // Get authentication code
+  const code = getAuthenticationCode()
+  const res = await vrc.user.verify2FactorAuth(code)
+}
 
 // get friends
 const friends = await vrc.user.getFriends()
