@@ -18,3 +18,18 @@ export const getFavFriends = async (): Promise<LimitedUserObject[]> => {
   const friends = await get<LimitedUserObject[]>('/auth/user/friends/favorite')
   return friends
 }
+
+export interface FriendStatus {
+  isFriend: boolean
+  outgoingRequest: boolean
+  incomingRequest: boolean
+}
+
+/**
+ * allows you to get the status of a friend.
+ * https://vrchatapi.github.io/#/UserAPI/FriendStatus
+ */
+export const getFriendStatus = async (id: string): Promise<FriendStatus> => {
+  const status = await get<FriendStatus>(`/user/${id}/friendStatus`)
+  return status
+}
