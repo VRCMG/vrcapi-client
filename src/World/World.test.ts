@@ -1,4 +1,4 @@
-import { WorldObject } from 'src/types/World'
+import { WorldObject } from 'types/World'
 import { logout } from 'src/User/Logout'
 import { beforeLogin } from 'test/BeforeLogin'
 import { WorldObjectTestData } from 'test/TestObjects'

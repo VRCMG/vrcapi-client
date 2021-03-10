@@ -1,4 +1,4 @@
-import { LimitedUserObject } from 'src/types/User'
+import { LimitedUserObject } from 'types/User'
 import { get } from '../util/API'
 
 /**

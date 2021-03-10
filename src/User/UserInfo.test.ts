@@ -1,4 +1,4 @@
-import { CurrentUserObject } from 'src/types/User'
+import { CurrentUserObject } from 'types/User'
 import { beforeLogin } from 'test/BeforeLogin'
 import { CurrentUserTestData } from 'test/TestObjects'
 import { logout } from './Logout'

@@ -1,7 +1,7 @@
 import { getFavFriends, getFriends } from './Friends'
 import { beforeLogin } from 'test/BeforeLogin'
 import { LimitedUserTestData } from 'test/TestObjects'
-import { LimitedUserObject } from 'src/types/User'
+import { LimitedUserObject } from 'types/User'
 import { logout } from './Logout'
 
 describe('User API - get friends', () => {

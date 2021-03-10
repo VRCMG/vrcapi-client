@@ -1,4 +1,4 @@
-import { CurrentUserObject } from 'src/types/User'
+import { CurrentUserObject } from 'types/User'
 import { get } from '../util/API'
 
 /**

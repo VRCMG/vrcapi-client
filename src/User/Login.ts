@@ -1,5 +1,5 @@
 import { getConfig } from '../System/Config'
-import { CurrentUserObject } from 'src/types/User'
+import { CurrentUserObject } from 'types/User'
 import { getAuth } from '../util/API'
 
 /**

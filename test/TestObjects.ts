@@ -1,5 +1,5 @@
-import { CurrentUserObject, LimitedUserObject } from 'src/types/User'
-import { WorldObject } from 'src/types/World'
+import { CurrentUserObject, LimitedUserObject } from 'types/User'
+import { WorldObject } from 'types/World'
 
 export const CurrentUserTestData: CurrentUserObject = {
   acceptedTOSVersion: 0,

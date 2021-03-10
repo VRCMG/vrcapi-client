@@ -1,4 +1,4 @@
-import { WorldObject } from 'src/types/World'
+import { WorldObject } from 'types/World'
 import { get } from '../util/API'
 
 /**

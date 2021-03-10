@@ -1,4 +1,4 @@
-import { ConfigObject } from 'src/types/Config'
+import { ConfigObject } from 'types/Config'
 import { get } from '../util/API'
 
 /**
